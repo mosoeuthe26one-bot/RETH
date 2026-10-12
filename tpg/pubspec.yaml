@@ -1,0 +1,25 @@
+name: smartmart_inventory
+description: SmartMart Retail Inventory Management App - TPG226C Group Project
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  # Gives us the app's private local folder so products.txt can be written
+  # on a real phone/emulator (dart:io is still used for all file reading/writing).
+  path_provider: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
