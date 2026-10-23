@@ -12,6 +12,9 @@ void main() {
   double b = double.parse(stdin.readLineSync()!);
   double area = calculateRecArea(a, b);
   stdout.writeln('The area of the rectangle is: $area');
+
+  var add = adder(5);
+  print(add(5));
 }
 
 double calculateRecArea([double L=2, double w=2]) => L * w;
@@ -23,4 +26,9 @@ void announce([String? name='User']) {
 
 void createUser({required String name, int age = 18, String? city}) {
 print('$name, $age, ${city ?? "unknown"}');
+}
+
+Function adder(int x)
+{
+  return (int y) => x + y;
 }
